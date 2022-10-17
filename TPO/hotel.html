@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://bootswatch.com/5/zephyr/bootstrap.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js" referrerpolicy="no-referrer"></script>
+    
+     <!---- FAVICON ---->
+     <link rel="shortcut icon" type="image/x-icon" href="./images/1600453965.ico" />
+     <!-- FONT AWESOME -->
+     <script src="https://kit.fontawesome.com/d7ffa1d7e3.js" crossorigin="anonymous"></script>
+     <!-- GOOGLE FONTS -->
+     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet" />
+     <!-- CSS -->
+     <link rel="stylesheet" href="./style.css" />
+
+     <title>Reservar habitacion</title>
+
+</head>
+
+
+
+<body class="" style="padding: 10px; margin: 10px;">
+
+    <header class="header">
+        <div class="social-media">
+            <a href=""><i class="fab fa-instagram"></i></a>
+            <a href=""><i class="fab fa-facebook-f"></i></a>
+            <a href=""><i class="fab fa-twitter"></i></a>
+        </div>
+        <div class="header-logo">
+            <img class="logo" src="./img/Logo.jpg" alt="Logo Rivoli" />
+            <h1>Rivoli Hotel</h1>
+        </div>
+        <div class="header-contact">
+            <a href="./contacto.html">¡Contáctanos!</a>
+        </div>
+    </header>
+    
+    <nav class="nav">
+        <ul>
+            <li><a href="./index.html">Volver</a></li>
+        </ul>
+    </nav>
+    
+    <section class="servicios">
+        <h2>Nuestras habitaciones</h2>
+
+        <div>
+            <h4 style="margin: px; padding: 7px;">Bienvenida/o <span id="usuario"></span></h4>
+           <form id="idForm"> 
+                <br> <br> <br>
+                    <div>
+                <fieldset class="formulario">
+               
+                    <label for="">Seleccione tipo de habitación </label>
+                    <select size="1" id="seleccionHotel">
+                        <option value="1">Single</option>
+                        <option value="2">Doble</option>
+                        <option value="3">Triple</option>
+                        <option value="4">Cuádruple</option>
+                        <option value="5">Múltiple</option>
+                    </select>
+        
+                    <label for="" id="fechaEntrada">Fecha de entrada</label>
+                    <input type="date" id="inputDate1" required>
+                    <label for="" id="fechaSalida">Fecha de salida</label>
+                    <input type="date" id="inputDate2" required>
+                    <br> <br>
+        
+                   <button id="Buscar" type="submit">Buscar habitación</button>
+                   <button value="Borrar" id="buttonSearch" type="button">Borrar</button>
+                  </fieldset>
+                  </div>
+                  <br>
+                  <div class="hotelDetails" id="hotelDetails">
+                    
+                  </div>
+                <div id="datosReserva"></div>
+                </form> 
+            <br>
+                
+            <div id="divDolar">
+            </div>
+            </div>
+            <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.4.29/dist/sweetalert2.all.min.js"></script>
+            <script src="script.js"></script>
+    </section>
+
+    <footer class="footer">
+        <p>Gracias por visitarnos</p>
+        <div class="social-footer">
+            <a href=""><i class="fab fa-instagram"></i></a>
+            <a href=""><i class="fab fa-facebook-f"></i></a>
+            <a href=""><i class="fab fa-twitter"></i></a>
+        </div>
+        <a href="./index.html">Página principal</a>
+    </footer>
+
+</body>
+</html>
