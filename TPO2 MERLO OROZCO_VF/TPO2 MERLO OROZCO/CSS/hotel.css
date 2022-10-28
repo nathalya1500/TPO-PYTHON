@@ -1,0 +1,22 @@
+body{
+    background: url(./img/fondoreserva.jpeg)
+        
+}
+
+form{
+    padding: 2px 2px 5px;
+    margin: 2px 2px 5px;   
+    border-radius: 10px;
+
+    color:black;
+}
+
+label{
+    padding: 5px;
+    margin: 5px;
+    }
+
+    button{
+        padding: 6px;
+        margin: 5px;
+        }
